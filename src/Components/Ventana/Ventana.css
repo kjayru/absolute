@@ -1,0 +1,50 @@
+#ascenso .container ,#pagina1-l .container, #pagina1-r .container{
+    height: 100vh;
+}
+.texto2 {
+    font-size: 30px;
+    line-height: 36px;
+    padding-top: 70px;
+}
+.textocentro {
+    font-size: 20px;
+    padding-top: 140px;
+}
+
+.footer {
+    padding-top: 10px;
+}
+.bloque {
+    background: cornflowerblue;
+    color: white;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+#pagina2-l ul {
+    list-style: none;
+    padding: 0;
+}
+#pagina2-l li {
+    display: inline-block;
+    max-width: 137px;
+    padding: 10px;
+}
+.barra-azul {
+    background: url('/images/barra.png') repeat-x 0 0;
+    padding-top: 20px;
+}
+.bq1 {
+    padding-top: 150px;
+    color:white;
+}
+.bloquemedio {
+    margin-bottom: 100px;
+}
+.bloquemedio p {
+    font-size: 25px;
+}
+#pagina1-r .bloquemedio  h3 {
+    font-size: 42px;
+}

@@ -1,0 +1,83 @@
+#contenedor {
+    position: relative;
+  
+    height: 100vh;
+    overflow: hidden;
+   
+}
+#contenedor>ul {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+}
+
+#contenedor>ul>li {
+    display: inline-flex;
+    width: 33.333%;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+    
+}
+.column{
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.ventana{
+    height: 100vh;
+    width: 100%;
+    float: left;
+    top: 0px;
+}
+#pagina1{
+   
+    
+    z-index: 10;
+}
+#pagina2{
+    
+  
+    z-index: 9;
+}
+#pagina3{
+   
+   
+    z-index: 8;
+}
+#pagina1-l {
+   
+    
+}
+#pagina1-r {
+   
+    
+}
+.col-md-4.textocentro p{
+    font-size: 27px;
+    padding-top: 40px;
+}
+
+
+.box {
+    -webkit-transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 500ms;
+  
+    transform: translate(0, 0);
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+  }
+  
+  .box.move {
+    -webkit-transform: translate(100px, 100px);
+    transform: translate(100px, 100px);
+  }
+
+
+@media (min-width: 900px){
+
+
+}
