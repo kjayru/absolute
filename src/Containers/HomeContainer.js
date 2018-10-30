@@ -1,26 +1,70 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+
+
 import './Home.css';
 class HomeContainer extends Component{
+    constructor(props){
+        super(props);
+       // localStorage.clear();
+      this.state = {
+          ingrear : false
+      }
+       
+    }
     handClick(event){
         event.preventDefault();
-        window.location.href='/secciones';
+        let edad = document.getElementById("edad").value;
+        let recordar = document.getElementById("recordar").checked;
+
+    
+            if(!localStorage.getItem('session')){
+                
+                let tuedad = 2018-edad;
+                if(tuedad>18){
+                  if(recordar===true){
+                      
+                    fetch('https://api.ipify.org/?format=json')
+                    .then(res=>res.json())
+                    .then(response=>{
+                        localStorage.setItem('session', response.ip);
+                        
+                        window.location.href='/secciones';
+                    })
+                   
+                  }else{
+                    localStorage.setItem('remember',Math.floor(Math.random() * 10));
+                    window.location.href='/secciones';
+                  }
+                 
+                }else{
+                    alert("eres menor de edad");
+                }
+            }
     }
+
+    componentDidMount(){
+       
+        if(localStorage.getItem('session')){
+           
+            window.location.href='/secciones';   
+        }
+    }
+    
     render(){
         return (
-            <div>
+            <div id="home">
                 <div className="container">
-                    <div className="row">
+                    <div className="row h-100 justfy-content-center align-items-center">
                         <div className="col-md-12">
                             <h1 className="text-center">BIENVENIDO</h1>
-                            <p className="text-center">Coloca tu fecha de nacimiento y empieza a darle al mundo más 
+                            <p className="text-center p1">Coloca tu fecha de nacimiento y empieza a darle al mundo más 
                                 amor y menos odio.
                             </p>
                             <div className="row justify-content-md-center">
                                 <form className="form-inline">
                                 
                                         <div className="form-group">
-                                            <input type="text" className="form-control" id="exampleInputEmail3" placeholder="YYYY"/>
+                                            <input type="text" className="form-control" id="edad" name="edad" placeholder="YYYY"/>
                                             <button type="submit" className="btn btn-primary" onClick={this.handClick}>OK</button>
                                         </div>   
                                 
@@ -34,7 +78,7 @@ class HomeContainer extends Component{
                                 <div className="iremenber">
                                     <form className="form">
                                         <div className="form-check">
-                                            <input className="form-check-input" type="checkbox" value="1" id="recordar"/>
+                                            <input className="form-check-input" type="checkbox" id="recordar"/>
                                             <label className="form-check-label" >
                                                 Recuérdame
                                             </label>
@@ -46,7 +90,7 @@ class HomeContainer extends Component{
 
 
                         <div className="col-md-12">
-                            <div className="titulo text-center">Absolut.</div>
+                            <div className="titulo text-center">Absolut</div>
                         </div>
 
                          <div className="col-md-12">

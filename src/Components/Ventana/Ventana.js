@@ -2,9 +2,23 @@ import React ,{ Component } from 'react';
 
 
 class Ventana extends Component{
+    constructor(props){
+        super(props);
+    }
+    handleChange(event){
+       
+        let cambio = document.getElementById('cambio').checked;
+        let efecto = document.getElementById('col-izquierda');
+        if(cambio===true){
+            
+            efecto.classList.add('fondoactivo');
+        }else{
+            efecto.classList.remove('fondoactivo');
+        }
+    }
     render(){
         return(
-            <div className="bl-left column">
+            <div className="bl-left column" id="col-izquierda">
                 <div className="lienzo ventana" id="pagina1-l">
                     <div className="container">
                             <div className="row h-100 justify-content-center align-items-center">
@@ -24,6 +38,10 @@ class Ventana extends Component{
                                     <div className="cambioescena">
                                         Prende el amor
                                     </div>
+                                    <label class="switch">
+                                        <input type="checkbox" id="cambio" onChange={this.handleChange}/>
+                                        <span class="slider round"></span>
+                                    </label>
                                 </div>
                             </div>
                     </div>

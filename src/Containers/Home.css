@@ -1,5 +1,25 @@
+#home .container{
+    height: 100vh;
+}
+#home h1 {
+    text-transform: uppercase;
+    font-family: 'Conv_AbsolutHeadline2017';
+    font-size: 84px;
+    font-weight: 400;
+}
+#home .titulo{
+    font-family: 'Conv_AbsolutHeadline2017';
+    font-size: 70px;
+    text-transform: uppercase;
+}
 .legal {
     text-align: center;
     font-size: 14px;
     font-weight: lighter;
+}
+#home p.p1 {
+    padding-top: 35px;
+    font-size: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
 }

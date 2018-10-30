@@ -49,5 +49,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "icon-font-loader": "^1.5.7"
+  }
 }

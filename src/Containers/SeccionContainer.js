@@ -7,6 +7,14 @@ import {TweenMax,Power4} from 'gsap';
 class SeccionContainer extends Component{
    constructor(props){
        super(props)
+       
+       if(!localStorage.getItem('session') ){
+          if(!localStorage.getItem('remember')){
+               window.location.href="/";
+          }
+          
+       }
+      
         
    }
    componentDidMount(){

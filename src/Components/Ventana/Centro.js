@@ -44,8 +44,8 @@ class Centro extends Component{
                                     <div className="carousel-inner">
                                         <div className="carousel-item active">
                                           <div className="row">
-                                            <div className="col-md-5">
-                                                <img src="/images/bottle.jpg" className="img-fluid" />
+                                            <div className="col-md-3">
+                                                <img src="/images/bottle.png" alt="b2" className="img-fluid" />
                                             </div>
                                             <div className="col-md-6 textocentro">
                                                 <p>En el mundo hay mucho odio, por eso decidimos hackearlo y convertirlo
@@ -57,8 +57,8 @@ class Centro extends Component{
                                         </div>
                                         <div className="carousel-item">
                                             <div className="row">
-                                                <div className="col-md-5">
-                                                    <img src="/images/bottle.jpg" className="img-fluid" />
+                                                <div className="col-md-3">
+                                                    <img src="/images/bottle.png" alt="b1" className="img-fluid" />
                                                 </div>
                                                 <div className="col-md-6 textocentro">
                                                     <p>En el mundo hay mucho odio, por eso decidimos hackearlo y convertirlo
@@ -70,8 +70,8 @@ class Centro extends Component{
                                         </div>
                                         <div className="carousel-item">
                                             <div className="row">
-                                                <div className="col-md-5">
-                                                    <img src="/images/bottle.jpg" className="img-fluid" />
+                                                <div className="col-md-3">
+                                                    <img src="/images/bottle.png" alt="b3" className="img-fluid" />
                                                 </div>
                                                 <div className="col-md-6 textocentro">
                                                     <p>En el mundo hay mucho odio, por eso decidimos hackearlo y convertirlo
