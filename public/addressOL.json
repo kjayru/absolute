@@ -1,0 +1,92 @@
+
+    {
+        "Mimar":
+        {
+            "distritos":
+            [
+                {
+                    "Lince": {
+                        "direccion": "Jirón Mariscal Miller 1898"
+                    }
+                },
+                {
+                    "Pueblo Libre": {
+                        "direccion": "Av Brasil 1196"
+                    }
+                }
+            ]
+        },
+        
+        "Sumon":
+            {
+                "distritos":
+                [ 
+                    {
+                        "San Luis": {
+                            "direccion": "Av. Canadá 3770"
+                        }
+                   }
+                ]
+            },
+        "Nuevo Mundo":
+         {
+            "distritos":
+            [
+                {
+                    "San Isidro": {
+                        "direccion": "Av. Arenales 289 (A media Cdra. de la Av. javier Prado)"
+                    },
+                    "San Borja": {
+                        "direccion": "Av. Aviación 2842"
+                    }
+                }
+            ]
+        },
+        "Almendariz":
+            {
+                "distritos":
+                [
+                    {
+                    "San Isidro": {
+                        "direccion": "Av. Los Conquistadores 875"
+                    },
+                    "Miraflores": {
+                        "direccion": "Calle Gral Mendiburu 665"
+                    }
+                }
+            ]
+        },
+        "El Pozito":
+        {
+            "distritos":
+            [
+                {
+                    "Barranco": {
+                        "direccion": "Av. San Martín 564, Barranco"
+                    },
+                    "San Isidro": [{
+                            "direccion": ".Av. Guardia Civil 816 Urb. Corpac"
+                        },
+                        {
+                            "direccion": "Av. Álvarez Calderón 107"
+                        }
+                    ],
+                    "Miraflores": {
+                        "direccion": "Av. Comandante Espinar 381"
+                    },
+                    "Surco": {
+                        "direccion": "Jr. Simón Salguero 588"
+                    },
+                    "La Molina": {
+                        "direccion": "Av. Raúl Ferrero 1083"
+                    },
+                    "Cercado de Lima": {
+                        "direccion": "Santiago de Compostela 160, Urb. La Estancia"
+                    },
+                    "Trujillo": {
+                        "direccion": "Prol. César Vallejo Mz. 11 - Lt. 13, Urb. Los Jardínes del Golf"
+                    }
+                }
+            ]
+        }
+    }

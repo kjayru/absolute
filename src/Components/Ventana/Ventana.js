@@ -4,8 +4,11 @@ import React ,{ Component } from 'react';
 class Ventana extends Component{
     constructor(props){
         super(props);
+        
     }
-    handleChange(event){
+
+    
+    handleChange(){
        
         let cambio = document.getElementById('cambio').checked;
         let efecto = document.getElementById('col-izquierda');
@@ -15,6 +18,20 @@ class Ventana extends Component{
         }else{
             efecto.classList.remove('fondoactivo');
         }
+    }
+    selectChange(){
+        let lugar = document.getElementById('lugares').value;
+        
+
+        fetch('/address.json')
+        .then(res =>res.json())
+        .catch(error => console.error('error: ', error))
+        .then(data =>{
+          
+           const dt = JSON.parse(data);
+          
+        })
+
     }
     render(){
         return(
@@ -38,9 +55,9 @@ class Ventana extends Component{
                                     <div className="cambioescena">
                                         Prende el amor
                                     </div>
-                                    <label class="switch">
+                                    <label className="switch">
                                         <input type="checkbox" id="cambio" onChange={this.handleChange}/>
-                                        <span class="slider round"></span>
+                                        <span className="slider round"></span>
                                     </label>
                                 </div>
                             </div>
@@ -75,11 +92,11 @@ class Ventana extends Component{
 
                                     <div className="form-group">
                                        
-                                        <select className="form-control" id="lugares">
+                                        <select className="form-control" id="lugares" onChange={this.selectChange}>
                                             <option>Seleccione</option>
-                                            <option value="mimar">Mimar</option>
-                                            <option value="sumon">Sumon</option>
-                                            <option value="nuevo mundo">Nuevo Mundo</option>
+                                            <option value="Mimar">Mimar</option>
+                                            <option value="Sumon">Sumon</option>
+                                            <option value="Nuevo mundo">Nuevo Mundo</option>
                                             <option value="Almendariz">Almendariz</option>
                                             <option value="Pozito">Pozito</option>
                                         </select>
