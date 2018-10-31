@@ -55,7 +55,7 @@ import {
         render() {
           return (
             <div>
-              <Navbar color="faded" light expand="md">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
               <Nav className="ml-auto" navbar>
               
                     <NavItem>
@@ -79,7 +79,7 @@ import {
                   </Nav>
 
                 </Collapse>
-              </Navbar>
+              </nav>
             </div>
           );
         }

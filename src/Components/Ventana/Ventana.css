@@ -1,6 +1,35 @@
 #ascenso .container ,#pagina1-l .container, #pagina1-r .container{
     height: 100vh;
+
 }
+#ascenso{
+    background: url('/images/back002.png') no-repeat center 0px;
+    background-size:cover; 
+    color:white;
+}
+
+#pagina2{
+    background: url('/images/back003.png') no-repeat center 0px;
+    background-size:cover; 
+    color:white;
+}
+#pagina1-l{
+    background: url('/images/back004.png') no-repeat center 0px;
+    background-size:cover; 
+    color:white;
+}
+#pagina2-l{
+    background: url('/images/back005.png') no-repeat center 0px;
+    background-size:cover; 
+    color:white;
+}
+#postfeed{
+    background: url('/images/back006.png') no-repeat center 0px;
+    background-size:cover; 
+    color:white;
+}
+
+
 .texto2 {
     font-size: 30px;
     line-height: 36px;

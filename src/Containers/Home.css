@@ -1,5 +1,14 @@
+#home{
+    background:url('/images/back001.png') no-repeat center top;
+    background-size:cover;
+    color:white;
+}
+
 #home .container{
     height: 100vh;
+}
+#home .container .row .block_1{
+    padding-top: 100px;
 }
 #home h1 {
     text-transform: uppercase;

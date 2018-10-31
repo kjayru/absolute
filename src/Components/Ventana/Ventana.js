@@ -28,7 +28,7 @@ class Ventana extends Component{
         .catch(error => console.error('error: ', error))
         .then(data =>{
           
-           const dt = JSON.parse(data);
+          // const dt = JSON.parse(data);
           
         })
 

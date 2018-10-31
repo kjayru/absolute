@@ -55,7 +55,7 @@ class HomeContainer extends Component{
             <div id="home">
                 <div className="container">
                     <div className="row h-100 justfy-content-center align-items-center">
-                        <div className="col-md-12">
+                        <div className="col-md-12 block_1">
                             <h1 className="text-center">BIENVENIDO</h1>
                             <p className="text-center p1">Coloca tu fecha de nacimiento y empieza a darle al mundo más 
                                 amor y menos odio.

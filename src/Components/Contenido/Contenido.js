@@ -14,7 +14,7 @@ class Contenido extends Component{
             <ul id="marco">
               <li><Ventana/></li>
                <li><Centro/></li>
-               <li><Derecha/></li>
+               <li id="postfeed"><Derecha/></li>
             </ul>
           </div>
           )

@@ -8,3 +8,6 @@ a.navbar-brand {
     font-size: 40px;
     font-family: 'Conv_AbsolutHeadline2017';
 }
+.bg-dark {
+    background-color: #000 !important;
+  }
